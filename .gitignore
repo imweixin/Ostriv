@@ -1,0 +1,5 @@
+# PL SQL
+*.~sql
+*.~pck
+
+# Powershell
