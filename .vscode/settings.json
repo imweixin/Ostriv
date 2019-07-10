@@ -1,18 +1,3 @@
 {
     "files.autoSave": "afterDelay",
-
-    //Code Runner
-    "code-runner.executorMap": {
-        "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "powershell": "pwsh -ExecutionPolicy ByPass -File",
-        "bat": "cmd /c",
-        "shellscript": "bash",
-        "typescript": "ts-node",
-        "swift": "swift",
-        "julia": "julia",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-      },
 }

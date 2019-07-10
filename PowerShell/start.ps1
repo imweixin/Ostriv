@@ -17,7 +17,8 @@ else {
 }
 
 # Prepare to write to file
-$fileName = "$PSScriptRoot/test/test.txt"
-NewFileIfNotExists($fileName)
+$url = 'https://docs.microsoft.com/en-us/dotnet/opbuildpdf/toc.pdf?branch=live'
+$fileName = "~/Downloads/.Net.pdf"
+# DownloadFromUrl -url $url -output $fileName 
 ExecuteCommand(@{Windows = 'echo "hello win"'; MacOS = "m"; Linux = "l" })
 

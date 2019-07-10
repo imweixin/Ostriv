@@ -69,7 +69,7 @@ PowerShellVersion = '6.0'
 NestedModules = @('.\admin.psm1','.\compat.psm1','.\filehandler.psm1','.\httphandler.psm1')
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @('NewFileIfNotExists','WriteToFile','ReadFromFile','ExtractFile','GetPwshFullPath')
+FunctionsToExport = @('NewFileIfNotExists','WriteToFile','ReadFromFile','ExtractFile','GetPwshFullPath','DownloadFromUrl')
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()

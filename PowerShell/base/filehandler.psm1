@@ -53,15 +53,18 @@ function DecryptFile {
 
 function ExtractFile {
     param (
-        [string]$fileName
+        [string]$fileName,
+        [string]$path
     )
-    Write-Output "hello world"
+    Expand-Archive -LiteralPath $fileName -DestinationPath $path -Force
 }
 
 function CompressFile {
     param (
-        [string]$fileName
+        [string[]]$files,
+        [string]$output
     )
+    Compress-Archive -LiteralPath $files -DestinationPath $output -CompressionLevel Optimal
     Write-Output "hello world"
 }
 
